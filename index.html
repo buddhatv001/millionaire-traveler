@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book a Tuesday Call — Marcus Murray | Millionaire Traveler</title>
+  <meta name="description" content="Join Marcus Murray every Tuesday for a 1-hour live Zoom. Learn the Millionaire Traveler business model. $200. Limited seats.">
+  <!-- Meta Pixel Code -->
+  <script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+    document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', 'PIXEL_ID_HERE');
+    fbq('track', 'PageView');
+  </script>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Georgia', serif; background: #0a0a0a; color: #fff; }
+
+    /* HERO */
+    .hero {
+      min-height: 100vh;
+      background: linear-gradient(135deg, #0a0a0a 0%, #1a1200 50%, #0a0a0a 100%);
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      text-align: center; padding: 40px 20px; position: relative; overflow: hidden;
+    }
+    .hero::before {
+      content: ''; position: absolute; inset: 0;
+      background: radial-gradient(ellipse at center, rgba(212,175,55,0.1) 0%, transparent 70%);
+    }
+    .logo-bar { font-size: 12px; letter-spacing: 4px; color: #d4af37; text-transform: uppercase; margin-bottom: 40px; }
+    .badge {
+      display: inline-block; background: #d4af37; color: #000;
+      font-size: 11px; font-weight: bold; letter-spacing: 3px; text-transform: uppercase;
+      padding: 8px 20px; margin-bottom: 30px;
+    }
+    h1 {
+      font-size: clamp(2.2rem, 6vw, 4.5rem); font-weight: bold;
+      line-height: 1.1; max-width: 900px; margin-bottom: 20px;
+      color: #fff;
+    }
+    h1 span { color: #d4af37; }
+    .subtitle {
+      font-size: clamp(1rem, 2.5vw, 1.3rem); color: #aaa;
+      max-width: 600px; line-height: 1.7; margin-bottom: 50px;
+    }
+    .cta-primary {
+      display: inline-block; background: #d4af37; color: #000;
+      font-size: 1.1rem; font-weight: bold; letter-spacing: 2px;
+      text-transform: uppercase; padding: 18px 50px;
+      text-decoration: none; transition: all 0.3s;
+    }
+    .cta-primary:hover { background: #fff; transform: translateY(-2px); }
+    .cta-note { margin-top: 15px; font-size: 13px; color: #666; }
+
+    /* FEATURE STRIP */
+    .feature-strip {
+      background: #d4af37; color: #000; padding: 15px 20px;
+      text-align: center; font-size: 13px; font-weight: bold; letter-spacing: 2px;
+    }
+
+    /* SOCIAL PROOF */
+    .proof { background: #111; padding: 60px 20px; }
+    .proof-inner { max-width: 900px; margin: 0 auto; text-align: center; }
+    .proof h2 { font-size: 1.6rem; color: #d4af37; margin-bottom: 40px; letter-spacing: 2px; }
+    .proof-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; }
+    .proof-card {
+      background: #1a1a1a; border: 1px solid #2a2a2a; padding: 30px;
+      border-left: 3px solid #d4af37;
+    }
+    .proof-card p { font-style: italic; color: #ccc; line-height: 1.7; margin-bottom: 15px; }
+    .proof-card .name { font-size: 12px; color: #d4af37; letter-spacing: 2px; }
+
+    /* WHAT YOU GET */
+    .what { background: #0a0a0a; padding: 80px 20px; }
+    .what-inner { max-width: 800px; margin: 0 auto; }
+    .section-label { font-size: 11px; letter-spacing: 4px; color: #d4af37; text-transform: uppercase; margin-bottom: 15px; }
+    .what h2 { font-size: clamp(1.8rem, 4vw, 2.8rem); margin-bottom: 50px; }
+    .pillar { display: flex; gap: 25px; margin-bottom: 40px; align-items: flex-start; }
+    .pillar-num {
+      font-size: 3rem; font-weight: bold; color: #d4af37; opacity: 0.3;
+      line-height: 1; min-width: 50px;
+    }
+    .pillar h3 { font-size: 1.2rem; color: #d4af37; margin-bottom: 10px; }
+    .pillar p { color: #999; line-height: 1.7; font-size: 0.95rem; }
+
+    /* ABOUT */
+    .about { background: #111; padding: 80px 20px; }
+    .about-inner { max-width: 800px; margin: 0 auto; display: grid; grid-template-columns: 1fr 2fr; gap: 50px; align-items: start; }
+    .about-img { background: #1a1a1a; border: 1px solid #2a2a2a; padding: 30px; text-align: center; }
+    .about-img .initials { font-size: 4rem; color: #d4af37; font-weight: bold; }
+    .about-img .name { font-size: 14px; letter-spacing: 2px; color: #d4af37; margin-top: 15px; }
+    .about-img .title { font-size: 11px; color: #666; margin-top: 5px; }
+    .about h2 { font-size: 1.8rem; margin-bottom: 20px; }
+    .about p { color: #999; line-height: 1.8; margin-bottom: 15px; }
+    .feature-badge {
+      display: inline-block; border: 1px solid #d4af37; color: #d4af37;
+      font-size: 10px; letter-spacing: 2px; padding: 6px 15px; margin-top: 15px;
+    }
+
+    /* PRICING */
+    .pricing { background: #0a0a0a; padding: 80px 20px; text-align: center; }
+    .pricing-inner { max-width: 500px; margin: 0 auto; }
+    .pricing h2 { font-size: clamp(1.8rem, 4vw, 2.5rem); margin-bottom: 10px; }
+    .pricing .sub { color: #666; margin-bottom: 50px; }
+    .price-box {
+      background: #111; border: 1px solid #d4af37; padding: 50px 40px;
+      position: relative;
+    }
+    .price-box .top-label {
+      position: absolute; top: -14px; left: 50%; transform: translateX(-50%);
+      background: #d4af37; color: #000; font-size: 11px; font-weight: bold;
+      letter-spacing: 2px; padding: 4px 20px;
+    }
+    .price-amount { font-size: 5rem; font-weight: bold; color: #d4af37; line-height: 1; }
+    .price-amount sup { font-size: 2rem; vertical-align: super; }
+    .price-desc { color: #666; margin: 10px 0 30px; font-size: 0.9rem; }
+    .price-features { list-style: none; text-align: left; margin-bottom: 40px; }
+    .price-features li {
+      padding: 12px 0; border-bottom: 1px solid #1a1a1a;
+      color: #ccc; font-size: 0.95rem; display: flex; align-items: center; gap: 10px;
+    }
+    .price-features li::before { content: '✓'; color: #d4af37; font-weight: bold; }
+    .urgency { margin-top: 20px; font-size: 12px; color: #d4af37; letter-spacing: 1px; }
+
+    /* FINAL CTA */
+    .final-cta {
+      background: linear-gradient(135deg, #1a1200, #0a0a0a);
+      padding: 100px 20px; text-align: center;
+      border-top: 1px solid #2a2a2a;
+    }
+    .final-cta h2 { font-size: clamp(2rem, 5vw, 3.5rem); margin-bottom: 20px; }
+    .final-cta h2 span { color: #d4af37; }
+    .final-cta p { color: #999; margin-bottom: 40px; max-width: 500px; margin-left: auto; margin-right: auto; }
+
+    /* FOOTER */
+    footer { background: #000; padding: 30px 20px; text-align: center; }
+    footer p { font-size: 11px; color: #333; letter-spacing: 1px; }
+    footer a { color: #555; text-decoration: none; }
+
+    @media (max-width: 600px) {
+      .about-inner { grid-template-columns: 1fr; }
+      .pillar { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- FEATURE STRIP -->
+  <div class="feature-strip">
+    📰 AS FEATURED IN BUSINESS 2.0 MAGAZINE &nbsp;|&nbsp; FEBRUARY 2026 EMERGING ENTREPRENEUR
+  </div>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="logo-bar">MILLIONAIRE TRAVELER &nbsp;×&nbsp; RAPID DOMINION LLC</div>
+    <div class="badge">Every Tuesday · Limited Seats</div>
+    <h1>The Business Model<br>That Lets You <span>Travel Like a Millionaire</span><br>While Building One</h1>
+    <p class="subtitle">
+      Marcus Murray reveals the exact system he used to build Rapid Dominion LLC — and how any entrepreneur can turn travel into a tax-deductible, deal-closing, income-generating engine.
+    </p>
+    <a href="#book" class="cta-primary" onclick="fbq('track', 'InitiateCheckout')">
+      Reserve Your Tuesday Seat — $200 →
+    </a>
+    <p class="cta-note">1-Hour Live Zoom · Every Tuesday · Marcus Murray, LIVE</p>
+  </section>
+
+  <!-- SOCIAL PROOF -->
+  <section class="proof">
+    <div class="proof-inner">
+      <h2>WHAT ENTREPRENEURS ARE SAYING</h2>
+      <div class="proof-grid">
+        <div class="proof-card">
+          <p>"Within 30 days of Marcus's call I had identified two new income streams I was literally sitting on. The travel angle changed how I see my entire business."</p>
+          <div class="name">— D. WASHINGTON, REAL ESTATE INVESTOR</div>
+        </div>
+        <div class="proof-card">
+          <p>"I've paid $10,000 for masterminds that gave me less than one hour with Marcus. $200 is the best investment I made all year."</p>
+          <div class="name">— T. BANKS, DIGITAL AGENCY FOUNDER</div>
+        </div>
+        <div class="proof-card">
+          <p>"I booked the call skeptical. I left with a complete business model I've already started building. Marcus doesn't waste a minute of your time."</p>
+          <div class="name">— K. HARRISON, ENTREPRENEUR</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT YOU GET -->
+  <section class="what">
+    <div class="what-inner">
+      <div class="section-label">What You'll Learn</div>
+      <h2>The 3-Pillar Millionaire Traveler Framework</h2>
+
+      <div class="pillar">
+        <div class="pillar-num">01</div>
+        <div>
+          <h3>The Travel Business Model</h3>
+          <p>Structure your business so every trip is a tax-deductible, deal-closing event — not a vacation. Marcus walks through the exact legal structure, deal types, and income channels most entrepreneurs never see. One structure change can shift thousands per year from expense to revenue.</p>
+        </div>
+      </div>
+
+      <div class="pillar">
+        <div class="pillar-num">02</div>
+        <div>
+          <h3>Relationship Capital at Altitude</h3>
+          <p>The specific strategy for meeting high-net-worth individuals, investors, and partners in premium travel environments. "People are different when they're away from their office," Marcus explains. "The walls come down. The deals get made." You'll learn exactly how to engineer these moments.</p>
+        </div>
+      </div>
+
+      <div class="pillar">
+        <div class="pillar-num">03</div>
+        <div>
+          <h3>The Recurring Revenue Engine</h3>
+          <p>How to build income streams that fund the lifestyle permanently — so travel pays for itself and then some. This is the shift from entrepreneur to operator: the business runs, the deals close, and the passport stays active.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT MARCUS -->
+  <section class="about">
+    <div class="about-inner">
+      <div class="about-img">
+        <div class="initials">MM</div>
+        <div class="name">MARCUS MURRAY</div>
+        <div class="title">Founder, Rapid Dominion LLC</div>
+        <div class="feature-badge">Business 2.0 Magazine<br>February 2026</div>
+      </div>
+      <div>
+        <h2>Who Is Marcus Murray?</h2>
+        <p>Marcus Murray is the founder of Rapid Dominion LLC and the creator of the Millionaire Traveler framework — a system for entrepreneurs who want to use strategic travel to accelerate deals, build premium relationships, and create income streams that fund the lifestyle most people only see online.</p>
+        <p>He has built businesses across multiple industries using the same core insight: location is leverage. The most powerful conversations happen away from the office. The best deals close somewhere memorable.</p>
+        <p>Every Tuesday, Marcus brings this framework live to a small group of entrepreneurs ready to build differently.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section class="pricing" id="book">
+    <div class="pricing-inner">
+      <div class="section-label">Tuesday Live Session</div>
+      <h2>One Hour. One Framework.<br>One Decision.</h2>
+      <p class="sub">Reserve your seat for the next Tuesday session.</p>
+
+      <div class="price-box">
+        <div class="top-label">TUESDAY LIVE WITH MARCUS</div>
+        <div class="price-amount"><sup>$</sup>200</div>
+        <div class="price-desc">per session · live Zoom · 1 hour</div>
+        <ul class="price-features">
+          <li>Live 1-hour Zoom with Marcus Murray</li>
+          <li>The complete Millionaire Traveler framework</li>
+          <li>Q&A — your specific business model addressed</li>
+          <li>Recording access (48 hours after session)</li>
+          <li>Business 2.0 Magazine resource guide included</li>
+          <li>Access to next session at member rate</li>
+        </ul>
+        <a href="STRIPE_PAYMENT_LINK_HERE" class="cta-primary" style="width:100%; display:block; text-align:center;"
+           onclick="fbq('track', 'Purchase', {value: 200, currency: 'USD'})">
+          Book My Tuesday Seat →
+        </a>
+        <p class="urgency">⚡ Seats are limited per session · Next Tuesday filling now</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="final-cta">
+    <h2>Your Next Deal Is<br>Waiting <span>Somewhere Else</span></h2>
+    <p>The entrepreneurs who close the most deals aren't working the hardest. They're working in the right rooms. Marcus shows you how to build those rooms — wherever you are in the world.</p>
+    <a href="#book" class="cta-primary" onclick="fbq('track', 'InitiateCheckout')">
+      Reserve Your Seat — $200 →
+    </a>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>
+      © 2026 Rapid Dominion LLC · Millionaire Traveler &nbsp;|&nbsp;
+      <a href="#">Privacy Policy</a> &nbsp;|&nbsp;
+      <a href="#">Terms</a> &nbsp;|&nbsp;
+      As featured in <a href="https://business2.digital">Business 2.0 Magazine</a>
+    </p>
+    <p style="margin-top:10px;">Questions? Contact: <a href="mailto:info@millionairetraveler.com">info@millionairetraveler.com</a></p>
+  </footer>
+
+  <!-- Facebook Pixel noscript -->
+  <noscript>
+    <img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=PIXEL_ID_HERE&ev=PageView&noscript=1"/>
+  </noscript>
+
+</body>
+</html>
